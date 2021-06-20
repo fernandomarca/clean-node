@@ -54,7 +54,7 @@ describe('Login Router', () => {
     }
     const httpResponse = sut.route(httpRequest)
     expect(httpResponse.statusCode).toBe(400)
-    expect(httpResponse.statusCode).toEqual(new MissingParamError('password'))
+    expect(httpResponse.body).toEqual(new MissingParamError('password'))
   })
 
   test('Should return 500 if no httpRequest is provided', () => {
