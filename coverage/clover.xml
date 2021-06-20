@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1624231258508" clover="3.2.0">
-  <project timestamp="1624231258508" name="All files">
+<coverage generated="1624231736772" clover="3.2.0">
+  <project timestamp="1624231736772" name="All files">
     <metrics statements="92" coveredstatements="92" conditionals="19" coveredconditionals="19" methods="10" coveredmethods="10" elements="121" coveredelements="121" complexity="0" loc="92" ncloc="92" packages="2" files="6" classes="6"/>
     <package name="helpers">
       <metrics statements="55" coveredstatements="55" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
@@ -17,11 +17,11 @@
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="12" count="7" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="19" count="1" type="stmt"/>
@@ -60,9 +60,9 @@
         <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="13" type="stmt"/>
-        <line num="4" count="13" type="stmt"/>
-        <line num="5" count="13" type="stmt"/>
+        <line num="3" count="14" type="stmt"/>
+        <line num="4" count="14" type="stmt"/>
+        <line num="5" count="14" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
       <file name="unauthorized-error.js" path="/home/fernando/Documentos/GitHub/Mango/clean-node/src/presentation/helpers/unauthorized-error.js">
@@ -84,37 +84,37 @@
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="13" type="stmt"/>
-        <line num="7" count="13" type="stmt"/>
-        <line num="8" count="13" type="stmt"/>
+        <line num="6" count="14" type="stmt"/>
+        <line num="7" count="14" type="stmt"/>
+        <line num="8" count="14" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="13" type="stmt"/>
-        <line num="12" count="13" type="stmt"/>
-        <line num="13" count="13" type="stmt"/>
-        <line num="14" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="14" type="stmt"/>
+        <line num="12" count="14" type="stmt"/>
+        <line num="13" count="14" type="stmt"/>
+        <line num="14" count="14" type="cond" truecount="1" falsecount="0"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="17" count="10" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="11" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="14" type="cond" truecount="1" falsecount="0"/>
         <line num="19" count="1" type="stmt"/>
         <line num="20" count="1" type="stmt"/>
         <line num="21" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="22" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="14" type="cond" truecount="1" falsecount="0"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="3" type="cond" truecount="1" falsecount="0"/>
         <line num="26" count="3" type="stmt"/>
-        <line num="27" count="13" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="14" type="cond" truecount="1" falsecount="0"/>
         <line num="28" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
         <line num="30" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="31" count="2" type="stmt"/>
-        <line num="32" count="13" type="cond" truecount="1" falsecount="0"/>
-        <line num="33" count="7" type="stmt"/>
-        <line num="34" count="7" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
-        <line num="36" count="13" type="stmt"/>
+        <line num="32" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
+        <line num="36" count="14" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
       </file>
     </package>
