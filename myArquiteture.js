@@ -4,7 +4,7 @@ const router = express.Router()
 module.exports = () => {
   const router = new SignUpRouter()
   router.post('/signup', ExpressRouterAdapter.adapt(router))
-};
+}
 
 class ExpressRouterAdapter {
   static adapt (router) {
@@ -14,7 +14,7 @@ class ExpressRouterAdapter {
       }
       const httpResponse = await router.route(httpRequest)
       res.status(httpResponse.statusCode).json(httpResponse.body)
-    };
+    }
   }
 }
 
