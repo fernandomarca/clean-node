@@ -4,13 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watchAll",
+    "test": "jest",
     "test:staged": "jest"
   },
   "standard":{
     "env":["jest"]
   },
-  "keywords": [],
+  "keywords": [
+    "lint",
+    "git",
+    "staged",
+    "eslint",
+    "prettier"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
