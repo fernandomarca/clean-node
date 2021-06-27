@@ -21,7 +21,7 @@
   "author": "Fernando Marca Magalhães",
   "license": "ISC",
   "lint-staged": {
-    "*.js": [
+    "src/**/*.js": [
       "standard --fix",
       "npm run test:staged",
       "git add"
