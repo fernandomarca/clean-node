@@ -20,6 +20,12 @@
   ],
   "author": "Fernando Marca Magalhães",
   "license": "ISC",
+  "husky":{
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push":"npm run test:ci"
+    }
+  },
   "lint-staged": {
     "src/**/*.js": [
       "standard --fix",
