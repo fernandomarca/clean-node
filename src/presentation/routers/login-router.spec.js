@@ -59,7 +59,7 @@ const makeAuthUseCaseWithError = () => {
 }
 
 describe('Login Router', () => {
-  test('Should return 400 if no email is provided', async () => {
+  test('Should return 401 if no email is provided', async () => {
     const { sut } = makeSut()
     const httpRequest = {
       body: { password: 'any_password' }
