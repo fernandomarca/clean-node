@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --silent --colors --noStackTrace",
+    "test": "jest --silent --colors --noStackTrace --passWithNoTest",
+    "test:unit": "jest --watch --silent --colors --noStackTrace --passWithNoTes -c jest-unit-config.js",
+    "test:integration": "jest --watch --silent --colors --noStackTrace --passWithNoTes -c jest-integration-config.js",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
-    "test:ci":"jest --coverage --silent --noStackTrace"
+    "test:ci":"jest --coverage --silent --colors --noStackTrace --passWithNoTest"
   },
   "standard":{
     "env":["jest"]
