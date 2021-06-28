@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --silent --colors --noStackTrace --passWithNoTests",
-    "test:unit": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-unit.config.js",
+    "test:unit": "jest --detectOpenHandles --watch --silent --colors --noStackTrace --passWithNoTests -c jest-unit.config.js",
     "test:integration": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-integration-config.js",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
     "test:ci": "jest --coverage --silent --colors --noStackTrace --passWithNoTests"
@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.5",
     "husky": "^6.0.0",
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
@@ -46,6 +47,7 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.9",
     "validator": "^13.6.0"
   }
 }
