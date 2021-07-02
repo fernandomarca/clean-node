@@ -43,4 +43,19 @@ describe('UpdateAccessToken Repository', () => {
     const updatedFakeUser = await userModel.findOne({ _id: fakeUser.ops[0]._id })
     expect(updatedFakeUser.accessToken).toBe('valid_token')
   })
+
+  test('Should throw if no userModel is provided', async () => {
+    expect(async () => {
+      const { sut } = new UpdateAccessTokenRepository()
+      const userModel = db.collection('users')
+      const fakeUser = await userModel.insertOne({
+        email: 'exist_email@mail.com',
+        name: 'any_name',
+        age: 34,
+        state: 'any_state',
+        password: 'hashed_password'
+      })
+      await sut.update(fakeUser.ops[0]._id, 'valid_token')
+    }).rejects.toThrow()
+  })
 })
