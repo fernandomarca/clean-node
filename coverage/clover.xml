@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625267831349" clover="3.2.0">
-  <project timestamp="1625267831350" name="All files">
+<coverage generated="1625268121415" clover="3.2.0">
+  <project timestamp="1625268121415" name="All files">
     <metrics statements="26" coveredstatements="24" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3" elements="33" coveredelements="30" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
     <file name="mongo-helper.js" path="/home/fernando/Documentos/GitHub/clean-node/src/infra/helpers/mongo-helper.js">
       <metrics statements="26" coveredstatements="24" conditionals="4" coveredconditionals="3" methods="3" coveredmethods="3"/>
