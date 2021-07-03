@@ -6,22 +6,23 @@ const UpdateAccessTokenRepository = require('../../infra/repositories/update-acc
 const Encrypter = require('../../utils/helpers/encrypter')
 const TokenGenerator = require('../../utils/helpers/tokenGenerator')
 const env = require('../config/env')
-
-// helpers
-const encrypter = new Encrypter()
-const tokenGenerator = new TokenGenerator(env.tokenSecret)
-const emailValidator = new EmailValidator()
-// repositories
-const loadUserByEmailRepository = new LoadUserByEmailRepository()
-const updateAccessTokenRepository = new UpdateAccessTokenRepository()
-// useCases
-const authUseCase = new AuthUseCase({
-  loadUserByEmailRepository,
-  updateAccessTokenRepository,
-  encrypter,
-  tokenGenerator
-})
-// export Router
-const loginRouter = new LoginRouter({ authUseCase, emailValidator })
-
-module.exports = loginRouter
+module.exports = class LoginRouterComposer {
+  static compose () {
+    // helpers
+    const encrypter = new Encrypter()
+    const tokenGenerator = new TokenGenerator(env.tokenSecret)
+    const emailValidator = new EmailValidator()
+    // repositories
+    const loadUserByEmailRepository = new LoadUserByEmailRepository()
+    const updateAccessTokenRepository = new UpdateAccessTokenRepository()
+    // useCases
+    const authUseCase = new AuthUseCase({
+      loadUserByEmailRepository,
+      updateAccessTokenRepository,
+      encrypter,
+      tokenGenerator
+    })
+    // Router
+    return LoginRouter({ authUseCase, emailValidator })
+  }
+}
