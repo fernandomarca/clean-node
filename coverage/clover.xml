@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625330804722" clover="3.2.0">
-  <project timestamp="1625330804722" name="All files">
-    <metrics statements="288" coveredstatements="283" conditionals="67" coveredconditionals="65" methods="27" coveredmethods="26" elements="382" coveredelements="374" complexity="0" loc="288" ncloc="288" packages="11" files="21" classes="21"/>
+<coverage generated="1625331623016" clover="3.2.0">
+  <project timestamp="1625331623017" name="All files">
+    <metrics statements="256" coveredstatements="254" conditionals="63" coveredconditionals="62" methods="23" coveredmethods="23" elements="342" coveredelements="339" complexity="0" loc="256" ncloc="256" packages="8" files="15" classes="15"/>
     <package name="domain.usecases">
       <metrics statements="39" coveredstatements="39" conditionals="17" coveredconditionals="17" methods="2" coveredmethods="2"/>
       <file name="auth-usecase.js" path="/home/fernando/Documentos/GitHub/clean-node/src/domain/usecases/auth-usecase.js">
@@ -129,65 +129,6 @@
         <line num="21" count="1" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="main">
-      <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="index.js" path="/home/fernando/Documentos/GitHub/clean-node/src/main/index.js">
-        <metrics statements="3" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-      </file>
-    </package>
-    <package name="main.config">
-      <metrics statements="16" coveredstatements="16" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-      <file name="app.js" path="/home/fernando/Documentos/GitHub/clean-node/src/main/config/app.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-      </file>
-      <file name="setup.js" path="/home/fernando/Documentos/GitHub/clean-node/src/main/config/setup.js">
-        <metrics statements="9" coveredstatements="9" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="main.middlewares">
-      <metrics statements="13" coveredstatements="13" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
-      <file name="content-type.js" path="/home/fernando/Documentos/GitHub/clean-node/src/main/middlewares/content-type.js">
-        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-      </file>
-      <file name="cors.js" path="/home/fernando/Documentos/GitHub/clean-node/src/main/middlewares/cors.js">
-        <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-      </file>
-      <file name="json-parser.js" path="/home/fernando/Documentos/GitHub/clean-node/src/main/middlewares/json-parser.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="2" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
       </file>
     </package>
     <package name="presentation.errors">
