@@ -4,11 +4,7 @@ const MissingParamError = require('../../utils/errors/missing-param-error')
 let db
 
 const makeSut = () => {
-  const userModel = db.collection('users')
-  const sut = new LoadUserByEmailRepository(userModel)
-  return {
-    userModel, sut
-  }
+  return new LoadUserByEmailRepository()
 }
 
 describe('LoadUserByEmailRepository', () => {
@@ -26,13 +22,13 @@ describe('LoadUserByEmailRepository', () => {
   })
 
   test('Should return null if no user is found', async () => {
-    const { sut } = makeSut()
+    const sut = makeSut()
     const user = await sut.load('non_exist_email@mail.com')
     expect(user).toBeNull()
   })
   test('Should return an user if user is found', async () => {
-    const { userModel, sut } = makeSut()
-    const fakeUser = await userModel.insertOne({
+    const sut = makeSut()
+    const fakeUser = await db.collection('users').insertOne({
       email: 'exist_email@mail.com',
       name: 'any_name',
       age: 34,
@@ -46,15 +42,8 @@ describe('LoadUserByEmailRepository', () => {
     })
   })
 
-  test('Should throw if no userModel is provided', async () => {
-    expect(async () => {
-      const { sut } = new LoadUserByEmailRepository()
-      await sut.load('any_email@mail.com')
-    }).rejects.toThrow()
-  })
-
   test('Should throw if no email is provided', async () => {
-    const { sut } = makeSut()
+    const sut = makeSut()
     const promise = sut.load()
     expect(promise).rejects.toThrow(new MissingParamError('email'))
   })
