@@ -4,10 +4,10 @@
   "description": "",
   "main": "src/main/index.js",
   "scripts": {
-    "start":"node src/main/index.js",
+    "start": "node src/main/index.js",
     "test": "jest --silent --colors --noStackTrace --passWithNoTests",
     "test:unit": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-unit.config.js",
-    "test:integration": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-integration-config.js",
+    "test:integration": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-integration.config.js",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
     "test:ci": "jest --coverage --silent --colors --noStackTrace --passWithNoTests"
   },
@@ -43,7 +43,8 @@
     "husky": "^6.0.0",
     "jest": "^27.0.4",
     "lint-staged": "^11.0.0",
-    "standard": "^16.0.3"
+    "standard": "^16.0.3",
+    "supertest": "^6.1.3"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
