@@ -7,7 +7,7 @@ const Encrypter = require('../../utils/helpers/encrypter')
 const TokenGenerator = require('../../utils/helpers/tokenGenerator')
 const env = require('../config/env')
 module.exports = class LoginRouterComposer {
-  static compose() {
+  static compose () {
     // helpers
     const encrypter = new Encrypter()
     const tokenGenerator = new TokenGenerator(env.tokenSecret)

@@ -7,7 +7,7 @@
     "start": "node src/main/index.js",
     "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
     "test:unit": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-unit.config.js",
-    "test:integration": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-integration.config.js",
+    "test:integration": "jest --watch --colors --noStackTrace --passWithNoTests -c jest-integration.config.js",
     "test:staged": "jest --passWithNoTests --findRelatedTests --silent --noStackTrace",
     "test:ci": "jest --coverage --silent --colors --noStackTrace --passWithNoTests"
   },
