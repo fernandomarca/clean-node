@@ -8,4 +8,3 @@ MongoHelper.connect(env.mongoUrl)
     app.listen(3333, () => console.log('🚀 server runner'))
   })
   .catch(console.error)
-
