@@ -1,7 +1,7 @@
 describe('Index', () => {
   test('Should call app listen', () => {
     jest.mock('./config/app', () => ({
-      listen(port, callback) {
+      listen (port, callback) {
         if (callback) {
           callback()
         }
