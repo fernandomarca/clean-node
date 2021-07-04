@@ -1,7 +1,11 @@
 const router = require('express').Router()
-const fg = require('fast-glob')
+const { readdirSync } = require('fs')
 
 module.exports = app => {
   app.use('/api', router)
-  fg.sync('**/src/main/routes/**routes.js').forEach(file => require(`../../../${file}`)(router))
+  readdirSync(`${__dirname}/../routes`).map(async file => {
+    if (!file.includes('.test.')) {
+      (await require(`../routes/${file}`))(router)
+    }
+  })
 }
