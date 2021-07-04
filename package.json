@@ -32,10 +32,9 @@
     }
   },
   "lint-staged": {
-    "src/**/*.js": [
-      "standard --fix",
-      "npm run test:staged",
-      "git add"
+    "*.js": [
+      "standard 'src/**' --fix",
+      "npm run test:staged"
     ]
   },
   "devDependencies": {
