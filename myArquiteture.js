@@ -47,7 +47,7 @@ class AddAccountRepository {
   }
 }
 
-//docker build -t clean-node
+//docker build -t clean-node .
 //docker image rm <id>
 //docker images -a
 //docker run -it clean-node sh
