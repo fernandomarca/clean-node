@@ -52,3 +52,4 @@ class AddAccountRepository {
 //docker images -a
 //docker run -it clean-node sh
 //docker run -p 5000:5000 clean-node
+//docker-compose up -d

@@ -5,6 +5,8 @@
   "main": "src/main/index.js",
   "scripts": {
     "start": "node src/main/index.js",
+    "up": "sudo docker-compose up -d",
+    "down": "sudo docker-compose down",
     "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
     "test:unit": "jest --watch --silent --colors --noStackTrace --passWithNoTests -c jest-unit.config.js",
     "test:integration": "jest --watch --colors --noStackTrace --passWithNoTests -c jest-integration.config.js",
