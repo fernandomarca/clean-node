@@ -1,4 +1,4 @@
-const mongoUrl = process.env.MONGO_URL || `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.kofp7.mongodb.net/${process.env.MONGO_DBNAME}?retryWrites=true&w=majority`
+const mongoUrl = process.env.MONGO_URL || `mongo://mongo:27017/clean-node`
 
 const tokenSecret = process.env.TOKEN_SECRET || 'secret'
 

@@ -46,3 +46,9 @@ class AddAccountRepository {
     return user;
   }
 }
+
+//docker build -t clean-node
+//docker image rm <id>
+//docker images -a
+//docker run -it clean-node sh
+//docker run -p 5000:5000 clean-node
