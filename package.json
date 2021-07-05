@@ -4,8 +4,8 @@
   "description": "",
   "main": "src/main/index.js",
   "scripts": {
-    "start": "node src/main/index.js",
-    "debug": "node --inspect=0.0.0.0:9222 --nolazy src/main/index.js",
+    "start": "nodemon -L --watch ./src src/main/index.js",
+    "debug": "nodemon -L --watch ./src --inspect=0.0.0.0:9222 --nolazy ./src/main/index.js",
     "up": "sudo docker-compose up -d",
     "down": "sudo docker-compose down",
     "test": "jest --silent --colors --noStackTrace --passWithNoTests --runInBand",
@@ -54,6 +54,7 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.6.9",
+    "nodemon": "^2.0.9",
     "validator": "^13.6.0"
   }
 }

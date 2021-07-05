@@ -1,4 +1,4 @@
-const mongoUrl = process.env.MONGO_URL || `mongo://mongo:27017/clean-node`
+const mongoUrl = process.env.MONGO_URL || `mongodb://mongo:27017/clean-node`
 
 const tokenSecret = process.env.TOKEN_SECRET || 'secret'
 
