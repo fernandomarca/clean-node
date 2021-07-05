@@ -13,10 +13,14 @@ services:
     build: .
     restart: always
     image: clean-node
-    command: npm start
+    command: npm run debug
     volumes:
       - ./src:/usr/src/clean-node
+      - ./package.json:/usr/src/clean-node/package.json
     ports:
-      - "3333:3333"
+      - 3333:3333
+      - 9222:9222
     links:
+      - mongo
+    depends_on:
       - mongo
